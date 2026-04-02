@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+    function toggleMenu() {
+      document.querySelector(".sumario").classList.toggle("active");
+    }
+  </script>
   <link rel="stylesheet" href="css/ficha_tecnica.css">
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ficha de Dados Técnicos</title>
 </head>
 <body>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
   <div class="sumario">
     <p style="align-self: center; border-bottom: 2px solid black;"> Sumario </p>
     <a href="#casa1">Rua Cap. Afonso Junqueira, 498</a>
